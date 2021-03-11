@@ -1,5 +1,5 @@
 import java.util.*
-import java.util.stream.Collector
+
 import kotlin.collections.HashSet
 
 fun LottoNumbers() {
@@ -10,7 +10,7 @@ fun LottoNumbers() {
         val num = random.nextInt(45)+1
         if(selected.add(num)){
             if (selected.size ==7){
-                break;
+                break
             }
         }
     }
@@ -21,17 +21,8 @@ fun main(args: Array<String>){
     val sc:Scanner = Scanner(System.`in`)
     println("숫자를 입력하세요")
     val num= sc.nextInt()
-
+    //LottoNumbers() 를 그 수만큼 반복하여 출력
     for(i in 1..num){
         LottoNumbers()
     }
-
-
-    //LottoNumbers() 를 그 수만큼 반복하여 출력
-
-
-
-
-
-
 }
